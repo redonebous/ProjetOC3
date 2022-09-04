@@ -1,0 +1,17 @@
+html, body {
+    overflow-x: hidden;
+}
+  
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+}
+
+h2, h3 {
+    font-family: 'Shrikhand', cursive;
+}

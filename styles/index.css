@@ -2,6 +2,7 @@
 
 @import './shared/settings.css';
 @import './shared/theme.css';
+@import './shared/util.css';
 @import './shared/image.css';
-@import './shared/header.scss';
-@import './shared/footer.scss';
+@import './shared/header.css';
+@import './shared/footer.css';

@@ -3,3 +3,5 @@
 @import './shared/settings.css';
 @import './shared/theme.css';
 @import './shared/image.css';
+@import './shared/header.scss';
+@import './shared/footer.scss';

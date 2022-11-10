@@ -114,43 +114,32 @@
   padding: 0px 20px;
   font-size: 18px;
   color: black;
-  /* span {
-      position: absolute;
-      right: 20px;
-      z-index: 0;
-      i {
-          font-size: 25px;
-          height: 100%;
-          width: 100%;
-          z-index: 1;
-      }
-  }
-  span:hover {
-      background: white;
-      i {
-
-          background: linear-gradient(var(--second-color), var(--prim-color));
-          z-index: 1;
-      }
-  } */
 }
-
-.test h6 {
-  font-size: 40px;
-  background: white;
-}
-.test h6 .fa {
-  display: inline;
+.card-container p span {
+  position: absolute;
+  right: 0px;
   font-size: 25px;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
 }
-.test h6:hover {
-  background: linear-gradient(var(--second-color), var(--prim-color));
+.card-container p span .fa {
+  visibility: hidden;
+  opacity: 0;
+}
+.card-container p span .fa2 {
+  transform: translateX(-100%);
+}
+.card-container p span:hover {
+  background: linear-gradient(to top, var(--second-color), var(--prim-color));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.card-container p span:hover .fa2 {
+  visibility: hidden;
+  opacity: 0;
+}
+.card-container p span:hover .fa {
+  visibility: visible;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=home.css.map */

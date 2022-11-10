@@ -129,44 +129,38 @@
         padding: 0px 20px;
         font-size: 18px;
         color: black;
-        /* span {
+
+        span {
             position: absolute;
-            right: 20px;
-            z-index: 0;
-            i {
-                font-size: 25px;
-                height: 100%;
-                width: 100%;
-                z-index: 1;
+            right: 0px;
+            font-size: 25px;
+            
+            .fa {
+                visibility: hidden;
+                opacity: 0;
+            }
+
+            .fa2 {
+                transform: translateX(-100%);
+            }
+
+            &:hover {
+                .fa2 {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+
+                .fa {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                
+                background: linear-gradient(to top, var(--second-color), var(--prim-color));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
         }
-        span:hover {
-            background: white;
-            i {
-                
-                background: linear-gradient(var(--second-color), var(--prim-color));
-                z-index: 1;
-            }
-        } */
     }
     
-}
-.test h6 {
-    font-size: 40px;
-    background: white;
-    .fa {
-        display: inline;
-        font-size: 25px;
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-    }
-    
-    &:hover {
-        background: linear-gradient(var(--second-color), var(--prim-color));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
 }

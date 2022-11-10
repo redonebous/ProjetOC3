@@ -1,0 +1,44 @@
+.loader {
+  position: absolute;
+  height: 1600px;
+  width: 100%;
+  background-color: var(--prim-color);
+  top: 0px;
+  z-index: 2;
+  visibility: hidden;
+  animation: appear-loader 5s linear;
+}
+.loader p {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100px;
+  width: 100%;
+  gap: 30px;
+  font-size: 30px;
+  color: white;
+}
+.loader p .loader-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.4);
+}
+.loader p .loader-circle::after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  top: 30px;
+  position: absolute;
+  border: 5px solid transparent;
+  border-top-color: white;
+  border-radius: 50px;
+  animation: spin-loader 1.2s linear infinite;
+}
+.loader p img {
+  height: 30px;
+  filter: invert(100%);
+  transform: translateY(5%);
+}
+
+/*# sourceMappingURL=loader.css.map */

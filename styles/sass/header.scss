@@ -1,7 +1,9 @@
 .header-container {
     width: 100%;
     height: 70px;
-    /* border-bottom: 1px solid black; */
+    background-color: white;
+    position: relative;
+
     span {
         position: absolute;
         left: 20px;
@@ -18,5 +20,4 @@
     height: 100%;
 }
 
-// PB sur l'ombre de la banner 
 

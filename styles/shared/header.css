@@ -1,7 +1,8 @@
 .header-container {
   width: 100%;
   height: 70px;
-  /* border-bottom: 1px solid black; */
+  background-color: white;
+  position: relative;
 }
 .header-container span {
   position: absolute;

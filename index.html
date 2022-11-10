@@ -21,32 +21,34 @@
         ><i class="fa-solid fa-location-dot"></i><em>Paris, Belleville</em></span
       >
       <div class="flex-col">
-        <h3 class="banner-title">Reservez le menu qui vous convient</h3>
-        <em class="banner-text"
+        <h3 class="flex-center">Réservez le menu qui vous convient</h3>
+        <em class="flex-center"
           >Découvrez les restaurants d'exception, séléctionnés par nos soins.</em
         >
-        <a href="#" class="btn-nav">Explorez nos restaurants</a>
+        <a href="#" class="flex-center">Explorer nos restaurants</a>
       </div>
     </div>
 
     <main class="main-content">
-      <section class="functioning-container">
+      <section class="functioning-container flex-list">
         <h3 class="section-title">Fonctionnement</h3>
-        <p class="stage-container">
-          <span>1</span><i class="fa-solid fa-mobile-screen-button"></i
+        <p class="stage-container flex-center">
+          <span class="flex-center">1</span><i class="fa-solid fa-mobile-screen-button"></i
           ><strong>Choisissez un restaurant</strong>
         </p>
-        <p class="stage-container">
-          <span>2</span><i class="fa-solid fa-list-ul"></i><strong>Composer votre menu</strong>
+        <p class="stage-container flex-center">
+          <span class="flex-center">2</span><i class="fa-solid fa-list-ul"></i
+          ><strong>Composer votre menu</strong>
         </p>
-        <p class="stage-container">
-          <span>3</span><i class="fa-solid fa-store"></i><strong>Dégustez au restaurant</strong>
+        <p class="stage-container flex-center">
+          <span class="flex-center">3</span><i class="fa-solid fa-store"></i
+          ><strong>Dégustez au restaurant</strong>
         </p>
       </section>
 
-      <section class="restaurant-container">
+      <section class="restaurant-container flex-list">
         <h3 class="section-title">Restaurants</h3>
-        <a href="#" class="card-container">
+        <a href="#" class="card-container flex-list">
           <picture class="card-picture">
             <span class="new-rest">Nouveau</span>
             <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" />
@@ -54,10 +56,10 @@
           <p class="text-card">
             <strong>La palette du goût</strong>
             <em>Ménilmontant</em>
-            <i class="fa-regular fa-heart"></i>
+            <div class="test"><h6>OK<i class="fa-solid fa-heart fa"></i></h6></div>
           </p>
         </a>
-        <a href="#" class="card-container">
+        <a href="#" class="card-container flex-list">
           <picture class="card-picture">
             <span class="new-rest">Nouveau</span>
             <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="" />
@@ -65,20 +67,20 @@
           <p class="text-card">
             <strong>La note enchantée</strong>
             <em>Charonne</em>
-            <i class="fa-regular fa-heart"></i>
+            <span><i class="fa-regular fa-heart"></i></span>
           </p>
         </a>
-        <a href="#" class="card-container">
+        <a href="#" class="card-container flex-list">
           <picture class="card-picture">
             <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="" />
           </picture>
           <p class="text-card">
             <strong>À la française</strong>
             <em>Cité Rouge</em>
-            <i class="fa-regular fa-heart"></i>
+            <span><i class="fa-regular fa-heart"></i></span>
           </p>
         </a>
-        <a href="#" class="card-container">
+        <a href="#" class="card-container flex-list">
           <picture class="card-picture">
             <img
               src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
@@ -88,17 +90,17 @@
           <p class="text-card">
             <strong>Le délice des sens</strong>
             <em>Folie-Méricourt</em>
-            <i class="fa-regular fa-heart"></i>
+            <span><i class="fa-regular fa-heart"></i></span>
           </p>
         </a>
       </section>
     </main>
-    <footer class="footer-container">
+    <footer class="footer-container flex-list">
       <picture class="logo-footer">
         <source srcset="./images/logo/ohmyfood@2x.svg" type="image/svg+xml" />
         <img src="./images/logo/ohmyfood.png" alt="Oh my food" />
       </picture>
-      <div class="footer-nav">
+      <div class="footer-nav flex-list">
         <span
           ><i class="fa-solid fa-utensils"></i
           ><a href="#" class="footer-link">Proposer un restaurant</a></span
@@ -111,5 +113,6 @@
         <a href="#" class="footer-link">Contact</a>
       </div>
     </footer>
+    <div class="loader"></div>
   </body>
 </html>

@@ -3,6 +3,8 @@
 @import './shared/settings.css';
 @import './shared/theme.css';
 @import './shared/util.css';
+@import './shared/animation.css';
 @import './shared/image.css';
 @import './shared/header.css';
 @import './shared/footer.css';
+@import './shared/loader.css';

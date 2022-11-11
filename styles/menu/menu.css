@@ -8,6 +8,8 @@ body {
 }
 .picture-rest img {
   width: 100%;
+  height: 260px;
+  object-fit: cover;
 }
 
 .main-rest {
@@ -19,15 +21,42 @@ body {
   background-color: var(--bckg-color2);
   gap: 30px;
 }
-.main-rest h2 {
+.main-rest div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 25px;
+  margin: 0px 20px;
   height: 10%;
   transform: translateY(15%);
+}
+.main-rest div h2 {
   font-size: 28px;
   font-weight: normal;
+}
+.main-rest div span {
+  font-size: 28px;
+}
+.main-rest div span .fa {
+  visibility: hidden;
+  opacity: 0;
+}
+.main-rest div span .fa2 {
+  transform: translateX(100%);
+}
+.main-rest div span:hover {
+  cursor: pointer;
+  background: linear-gradient(to top, var(--second-color), var(--prim-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-rest div span:hover .fa2 {
+  visibility: hidden;
+  opacity: 0;
+}
+.main-rest div span:hover .fa {
+  visibility: visible;
+  opacity: 1;
 }
 .main-rest section {
   height: 30%;
@@ -55,6 +84,9 @@ body {
   box-shadow: 0px 0px 10px 0px var(--shadow-banner);
   border-radius: 20px;
   background-color: white;
+  visibility: hidden;
+  opacity: 0;
+  animation: appear-card 3s 4s forwards;
 }
 .main-rest section a i {
   position: absolute;

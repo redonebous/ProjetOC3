@@ -23,3 +23,17 @@
         opacity: 0;
     }
 }
+
+@keyframes appear-card {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50%);
+    }
+
+    100% {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}

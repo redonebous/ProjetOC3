@@ -1,12 +1,11 @@
 .loader {
   position: absolute;
-  height: 1600px;
+  height: 100%;
   width: 100%;
   background-color: var(--prim-color);
   top: 0px;
   z-index: 2;
-  visibility: hidden;
-  animation: appear-loader 5s linear;
+  animation: appear-loader 5s linear forwards;
 }
 .loader p {
   position: fixed;

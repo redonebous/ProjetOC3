@@ -5,7 +5,7 @@
   background-color: var(--prim-color);
   top: 0px;
   z-index: 2;
-  animation: appear-loader 5s linear forwards;
+  animation: appear-loader 3s linear forwards;
 }
 .loader p {
   position: fixed;

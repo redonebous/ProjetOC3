@@ -67,7 +67,14 @@ body {
             }
         }
 
+
+        
         a {
+            @for $i from 1 through 5 {
+                &:nth-child(#{$i}) {
+                    animation-delay: 200ms * $i;
+                }
+            }
             position: relative;
             height: 70px;
             width: 90%;
@@ -77,19 +84,51 @@ body {
             background-color: white;
             visibility: hidden;
             opacity: 0;
-            animation: appear-card 3s forwards;
+            animation: appear-card 1s forwards;
 
-            i {
+            span {
+                display: flex;
+                height: 100%;
+                width: 0%;
+                background-color: var(--third-color);
                 position: absolute;
-                top: 50%;
-                right: -7%;
-                transform: translateY(-50%) rotate(-0.25turn) scale(1.5);
-                visibility: hidden;
-                opacity: 0;
-                background-color: white;
-                color: var(--third-color);
-                border-radius: 100px;
+                right: 0px;
+                top: 0px;
+                transition: width 1s;
+                border-radius: 0px 20px 20px 0px;
+
+
+                i {
+                    /* position: absolute;
+                    top: 50%;
+                    right: -7%;
+                    transform: translateY(-50%) rotate(-0.25turn) scale(1.5); */
+                    visibility: hidden;
+                    opacity: 0;
+                    background-color: var(--third-color);
+                    color: white;
+                    border-radius: 100px;
+                }
             }
+
+            &:hover {
+                p {
+                    width: 80%;
+                }
+
+                span {
+                    width: 20%;
+                    border-radius: 0px 20px 20px 0px;
+                    font-size: 30px;
+                    i {
+                        /* visibility: visible;
+                        opacity: 1; */
+                        animation: rotation-check 500ms forwards;
+                    }
+                }
+            }
+
+
         }
 
     }
@@ -106,6 +145,7 @@ body {
     width: 100%;
     padding: 0px 15px;
     justify-content: space-evenly;
+    transition: width 1s;
     :first-child {
         font-size: 18px;
     }

@@ -83,18 +83,57 @@ body {
   background-color: white;
   visibility: hidden;
   opacity: 0;
-  animation: appear-card 3s forwards;
+  animation: appear-card 1s forwards;
 }
-.main-rest section a i {
+.main-rest section a:nth-child(1) {
+  animation-delay: 200ms;
+}
+.main-rest section a:nth-child(2) {
+  animation-delay: 400ms;
+}
+.main-rest section a:nth-child(3) {
+  animation-delay: 600ms;
+}
+.main-rest section a:nth-child(4) {
+  animation-delay: 800ms;
+}
+.main-rest section a:nth-child(5) {
+  animation-delay: 1000ms;
+}
+.main-rest section a span {
+  display: flex;
+  height: 100%;
+  width: 0%;
+  background-color: var(--third-color);
   position: absolute;
+  right: 0px;
+  top: 0px;
+  transition: width 1s;
+  border-radius: 0px 20px 20px 0px;
+}
+.main-rest section a span i {
+  /* position: absolute;
   top: 50%;
   right: -7%;
-  transform: translateY(-50%) rotate(-0.25turn) scale(1.5);
+  transform: translateY(-50%) rotate(-0.25turn) scale(1.5); */
   visibility: hidden;
   opacity: 0;
-  background-color: white;
-  color: var(--third-color);
+  background-color: var(--third-color);
+  color: white;
   border-radius: 100px;
+}
+.main-rest section a:hover p {
+  width: 80%;
+}
+.main-rest section a:hover span {
+  width: 20%;
+  border-radius: 0px 20px 20px 0px;
+  font-size: 30px;
+}
+.main-rest section a:hover span i {
+  /* visibility: visible;
+  opacity: 1; */
+  animation: rotation-check 500ms forwards;
 }
 .main-rest button {
   height: 50px;
@@ -119,6 +158,7 @@ body {
   width: 100%;
   padding: 0px 15px;
   justify-content: space-evenly;
+  transition: width 1s;
 }
 .text-menu :first-child {
   font-size: 18px;

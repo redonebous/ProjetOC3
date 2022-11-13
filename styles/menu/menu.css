@@ -106,7 +106,7 @@ body {
   width: 30%;
   margin-right: -30%;
   background-color: var(--third-color);
-  transition: margin-right 500ms;
+  transition: margin-right 1s;
 }
 .main-rest section a span i {
   background-color: var(--third-color);
@@ -118,13 +118,13 @@ body {
   margin-right: 0%;
 }
 .main-rest section a:hover span i {
-  animation: rotation-check 500ms forwards;
+  animation: rotation-check 1s forwards;
 }
 .main-rest section a .price-item {
   display: flex;
   justify-content: right;
   align-items: flex-end;
-  padding: 10px 15px;
+  padding: 12px 15px 12px 0px;
 }
 .main-rest button {
   height: 50px;
@@ -146,19 +146,20 @@ body {
 
 .text-menu {
   height: 100%;
-  padding: 10px 15px;
+  padding: 12px 15px;
   transition: width 1s;
   width: 90%;
   justify-content: space-between;
   min-width: 0px;
 }
 .text-menu :first-child {
-  font-size: 18px;
+  font-size: 16px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .text-menu em {
+  font-size: 14px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

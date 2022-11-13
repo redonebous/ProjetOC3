@@ -41,7 +41,7 @@
 
 @keyframes rotation-check {
     0% {
-        transform: rotate(0turn);
+        transform: rotate(-0.5turn);
     }
     100% {
         transform: rotate(1turn);

@@ -73,6 +73,7 @@ body {
 }
 .main-rest section a {
   position: relative;
+  display: flex;
   height: 70px;
   width: 90%;
   margin: 10px 0px;
@@ -82,6 +83,7 @@ body {
   visibility: hidden;
   opacity: 0;
   animation: appear-card 1s forwards;
+  overflow: hidden;
 }
 .main-rest section a:nth-child(1) {
   animation-delay: 200ms;
@@ -101,31 +103,28 @@ body {
 .main-rest section a span {
   display: flex;
   height: 100%;
-  width: 0%;
+  width: 30%;
+  margin-right: -30%;
   background-color: var(--third-color);
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  transition: width 1s;
-  border-radius: 0px 20px 20px 0px;
+  transition: margin-right 500ms;
 }
 .main-rest section a span i {
-  visibility: hidden;
-  opacity: 0;
   background-color: var(--third-color);
   color: white;
   border-radius: 100px;
-}
-.main-rest section a:hover p {
-  width: 80%;
+  font-size: 25px;
 }
 .main-rest section a:hover span {
-  width: 20%;
-  border-radius: 0px 20px 20px 0px;
-  font-size: 30px;
+  margin-right: 0%;
 }
 .main-rest section a:hover span i {
   animation: rotation-check 500ms forwards;
+}
+.main-rest section a .price-item {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding: 10px 15px;
 }
 .main-rest button {
   height: 50px;
@@ -147,20 +146,22 @@ body {
 
 .text-menu {
   height: 100%;
-  width: 100%;
-  padding: 0px 15px;
-  justify-content: space-evenly;
+  padding: 10px 15px;
   transition: width 1s;
+  width: 90%;
+  justify-content: space-between;
+  min-width: 0px;
 }
 .text-menu :first-child {
   font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .text-menu em {
-  display: flex;
-  justify-content: space-between;
-}
-.text-menu .price-item {
-  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /*# sourceMappingURL=menu.css.map */

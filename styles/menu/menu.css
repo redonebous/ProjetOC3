@@ -33,25 +33,23 @@ body {
 .main-rest div span {
   font-size: 28px;
 }
-.main-rest div span .fa2 {
-  transform: translateX(100%);
-}
-.main-rest div span .fa {
-  visibility: hidden;
+.main-rest div span .fas {
   opacity: 0;
-}
-.main-rest div span:hover {
+  transition: opacity 300ms;
   background: linear-gradient(to top, var(--second-color), var(--prim-color));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.main-rest div span:hover .fa2 {
-  visibility: hidden;
+.main-rest div span .far {
+  transform: translateX(100%);
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.main-rest div span:hover .far {
   opacity: 0;
 }
-.main-rest div span:hover .fa {
-  visibility: visible;
+.main-rest div span:hover .fas {
   opacity: 1;
 }
 .main-rest section {
@@ -112,10 +110,6 @@ body {
   border-radius: 0px 20px 20px 0px;
 }
 .main-rest section a span i {
-  /* position: absolute;
-  top: 50%;
-  right: -7%;
-  transform: translateY(-50%) rotate(-0.25turn) scale(1.5); */
   visibility: hidden;
   opacity: 0;
   background-color: var(--third-color);
@@ -131,8 +125,6 @@ body {
   font-size: 30px;
 }
 .main-rest section a:hover span i {
-  /* visibility: visible;
-  opacity: 1; */
   animation: rotation-check 500ms forwards;
 }
 .main-rest button {

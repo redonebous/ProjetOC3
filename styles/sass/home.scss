@@ -122,12 +122,8 @@
 
         span {
             position: absolute;
-            right: 0px;
+            right: 20px;
             font-size: 25px;
-
-            .fa2 {
-                transform: translateX(-100%);
-            }
 
             @include heart-hover;
         }

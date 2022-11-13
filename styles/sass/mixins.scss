@@ -18,26 +18,29 @@
 
 @mixin heart-hover {
 
-    .fa {
-        visibility: hidden;
+    .fas {
         opacity: 0;
-    }
-
-    &:hover {
-        .fa2 {
-            visibility: hidden;
-            opacity: 0;
-        }
-
-        .fa {
-            visibility: visible;
-            opacity: 1;
-        }
-        
+        transition: opacity 300ms;
         background: linear-gradient(to top, var(--second-color), var(--prim-color));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .far {
+        transform: translateX(100%);
+        opacity: 1;
+        transition: opacity 300ms;
+    }
+    
+    &:hover {
+        .far {
+            opacity: 0;
+        }
+        
+        .fas {
+            opacity: 1;
+        }
+        
     }
 }
 

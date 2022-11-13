@@ -117,28 +117,26 @@
 }
 .card-container p span {
   position: absolute;
-  right: 0px;
+  right: 20px;
   font-size: 25px;
 }
-.card-container p span .fa2 {
-  transform: translateX(-100%);
-}
-.card-container p span .fa {
-  visibility: hidden;
+.card-container p span .fas {
   opacity: 0;
-}
-.card-container p span:hover {
+  transition: opacity 300ms;
   background: linear-gradient(to top, var(--second-color), var(--prim-color));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.card-container p span:hover .fa2 {
-  visibility: hidden;
+.card-container p span .far {
+  transform: translateX(100%);
+  opacity: 1;
+  transition: opacity 300ms;
+}
+.card-container p span:hover .far {
   opacity: 0;
 }
-.card-container p span:hover .fa {
-  visibility: visible;
+.card-container p span:hover .fas {
   opacity: 1;
 }
 

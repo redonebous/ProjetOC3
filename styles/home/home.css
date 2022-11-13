@@ -31,10 +31,14 @@
   font-size: 16px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px 0px var(--shadow-banner);
-  background: linear-gradient(var(--second-color), var(--prim-color));
+  background: linear-gradient(to right bottom, var(--second-color), var(--prim-color));
   color: white;
   border: none;
   cursor: pointer;
+}
+.banner-container div button:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 0px 10px 0px var(--shadow-banner-hov);
 }
 
 /* Fonctionnement */
@@ -69,7 +73,7 @@
   left: 15%;
 }
 .functioning-container p:hover {
-  background-color: var(--prim-color2);
+  background-color: var(--prim-color-hov);
 }
 .functioning-container p:hover i {
   color: var(--prim-color);
@@ -95,15 +99,6 @@
   height: 70%;
   position: relative;
 }
-.card-container picture span {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  background-color: var(--third-color);
-  padding: 5px 10px;
-  border-radius: 3px;
-  color: green;
-}
 .card-container picture img {
   height: 100%;
   width: 100%;
@@ -125,12 +120,12 @@
   right: 0px;
   font-size: 25px;
 }
+.card-container p span .fa2 {
+  transform: translateX(-100%);
+}
 .card-container p span .fa {
   visibility: hidden;
   opacity: 0;
-}
-.card-container p span .fa2 {
-  transform: translateX(-100%);
 }
 .card-container p span:hover {
   background: linear-gradient(to top, var(--second-color), var(--prim-color));
@@ -145,6 +140,17 @@
 .card-container p span:hover .fa {
   visibility: visible;
   opacity: 1;
+}
+
+.new-rest::before {
+  content: "Nouveau";
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: var(--third-color);
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: green;
 }
 
 /*# sourceMappingURL=home.css.map */

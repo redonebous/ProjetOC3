@@ -33,15 +33,14 @@ body {
 .main-rest div span {
   font-size: 28px;
 }
+.main-rest div span .fa2 {
+  transform: translateX(100%);
+}
 .main-rest div span .fa {
   visibility: hidden;
   opacity: 0;
 }
-.main-rest div span .fa2 {
-  transform: translateX(100%);
-}
 .main-rest div span:hover {
-  cursor: pointer;
   background: linear-gradient(to top, var(--second-color), var(--prim-color));
   background-clip: text;
   -webkit-background-clip: text;
@@ -84,7 +83,7 @@ body {
   background-color: white;
   visibility: hidden;
   opacity: 0;
-  animation: appear-card 3s 4s forwards;
+  animation: appear-card 3s forwards;
 }
 .main-rest section a i {
   position: absolute;
@@ -103,12 +102,16 @@ body {
   font-size: 16px;
   border-radius: 50px;
   box-shadow: 0px 0px 10px 0px var(--shadow-banner);
-  background: linear-gradient(var(--second-color), var(--prim-color));
+  background: linear-gradient(to right bottom, var(--second-color), var(--prim-color));
   color: white;
   border: none;
   cursor: pointer;
   align-self: center;
   width: 50%;
+}
+.main-rest button:hover {
+  filter: brightness(110%);
+  box-shadow: 0px 0px 10px 0px var(--shadow-banner-hov);
 }
 
 .text-menu {

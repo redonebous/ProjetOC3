@@ -1,0 +1,43 @@
+@mixin button-gradient {
+    height: 50px;
+    padding: 0px 20px;
+    font-size: 16px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 0px var(--shadow-banner);
+    background: linear-gradient(to right bottom, var(--second-color), var(--prim-color));
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(110%);
+        box-shadow: 0px 0px 10px 0px var(--shadow-banner-hov);
+    }
+    
+}
+
+@mixin heart-hover {
+
+    .fa {
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    &:hover {
+        .fa2 {
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .fa {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+        background: linear-gradient(to top, var(--second-color), var(--prim-color));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+

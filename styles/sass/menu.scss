@@ -1,3 +1,6 @@
+@import './mixins.scss';
+
+
 body {
     background-color: var(--bckg-color2);
 }
@@ -34,34 +37,11 @@ body {
         span {
             font-size: 28px;
 
-            .fa {
-                visibility: hidden;
-                opacity: 0;
-            }
-
             .fa2 {
                 transform: translateX(100%);
             }
 
-            &:hover {
-                .fa2 {
-                    visibility: hidden;
-                    opacity: 0;
-                }
-
-                .fa {
-                    visibility: visible;
-                    opacity: 1;
-                }
-
-                cursor: pointer;
-                background: linear-gradient(to top, var(--second-color), var(--prim-color));
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
-
-
+            @include heart-hover;
         }
 
     }
@@ -97,7 +77,7 @@ body {
             background-color: white;
             visibility: hidden;
             opacity: 0;
-            animation: appear-card 3s 4s forwards;
+            animation: appear-card 3s forwards;
 
             i {
                 position: absolute;
@@ -115,17 +95,8 @@ body {
     }
 
     button {
-        height: 50px;
-        padding: 0px 20px;
-        font-size: 16px;
-        border-radius: 50px;
-        box-shadow: 0px 0px 10px 0px var(--shadow-banner);
-        background: linear-gradient(var(--second-color), var(--prim-color));
-        color: white;
-        border: none;
-        cursor: pointer;
+        @include button-gradient;
         align-self: center;
-
         width: 50%;
     }
 }

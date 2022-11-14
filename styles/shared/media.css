@@ -1,0 +1,78 @@
+/* Home */
+@media screen and (min-width: 1000px) {
+  .section-title {
+    width: 100%;
+  }
+  .functioning-container {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0% 3%;
+  }
+  .functioning-container .stage-container {
+    width: 30%;
+  }
+  .functioning-container .stage-container span {
+    left: -10px;
+  }
+  .functioning-container .stage-container i {
+    left: 10%;
+  }
+  .restaurant-container {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .restaurant-container h3 {
+    margin: 0% 3%;
+  }
+  .restaurant-container a {
+    width: 45%;
+    margin: 20px 0px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .header-container {
+    height: 100px;
+  }
+  .header-container .logo-header {
+    height: 40px;
+  }
+  .banner-container {
+    height: 400px;
+  }
+  .banner-container span {
+    font-size: 18px;
+  }
+  .banner-container div h3 {
+    font-size: 26px;
+  }
+  .banner-container div em {
+    font-size: 22px;
+  }
+  .functioning-container h3 {
+    font-size: 26px;
+  }
+  .functioning-container .stage-container {
+    height: 100px;
+    font-size: 20px;
+  }
+  .functioning-container .stage-container span {
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    transform: translateX(-20%);
+  }
+  .restaurant-container h3 {
+    font-size: 26px;
+  }
+  .restaurant-container a {
+    height: 300px;
+  }
+  .restaurant-container a picture::before {
+    font-size: 20px;
+  }
+  .restaurant-container a p {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

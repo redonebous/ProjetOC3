@@ -10,7 +10,6 @@ body {
   background-color: var(--prim-color);
   top: 0px;
   z-index: 2;
-  /* visibility: hidden; */
   animation: appear-loader 3s linear forwards;
 }
 .loader p {

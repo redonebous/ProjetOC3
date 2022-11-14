@@ -1,14 +1,22 @@
+body {
+  animation: body-block 3s forwards;
+}
+
 .loader {
   position: absolute;
-  height: 2257px;
+  height: 100vh;
+  overflow-y: hidden;
   width: 100%;
   background-color: var(--prim-color);
   top: 0px;
   z-index: 2;
+  /* visibility: hidden; */
   animation: appear-loader 3s linear forwards;
 }
 .loader p {
   position: fixed;
+  flex-direction: column-reverse;
+  gap: 20px;
   top: 50%;
   transform: translateY(-50%);
   height: 100px;

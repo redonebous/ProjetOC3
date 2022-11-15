@@ -26,7 +26,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0px 20px;
+        margin: 0px 5%;
         height: 100px;
 
         h2 {
@@ -57,7 +57,7 @@ body {
 
             span {
                 position: absolute;
-                width: 10%;
+                width: 45px;
                 border-bottom: 3px solid var(--third-color);
                 bottom: -5px;
             }
@@ -75,7 +75,7 @@ body {
             height: 70px;
             width: 90%;
             margin: 10px 0px;
-            box-shadow: 0px 0px 10px 0px var(--shadow-banner);
+            box-shadow: 0px 0px 10px -5px var(--shadow-banner);
             border-radius: 20px;
             background-color: white;
             visibility: hidden;
@@ -90,7 +90,7 @@ body {
                 width: 30%;
                 margin-right: -30%;
                 background-color: var(--third-color);
-                transition: margin-right 1s;
+                transition: margin-right 500ms;
 
                 i {
                     background-color: var(--third-color);
@@ -105,7 +105,7 @@ body {
                     margin-right: 0%;
 
                     i {
-                        animation: rotation-check 1s forwards;
+                        animation: rotation-check 500ms forwards;
                     }
                 }
             }
@@ -114,7 +114,7 @@ body {
                 display: flex;
                 justify-content: right;
                 align-items: flex-end;
-                padding: 12px 15px 12px 0px;
+                padding: 12px 25px 12px 0px;
             }
 
         }
@@ -124,7 +124,7 @@ body {
     button {
         @include button-gradient;
         align-self: center;
-        width: 50%;
+        width: 200px;
     }
 }
 
@@ -132,7 +132,7 @@ body {
     height: 100%;
     padding: 12px 15px;
     transition: width 1s;
-    width: 90%;
+    width: 100%;
     justify-content: space-between;
     min-width: 0px;
 

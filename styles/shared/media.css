@@ -1,5 +1,15 @@
-/* Home */
+@media screen and (min-width: 750px) {
+  .main-rest section {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0% 5% 3% 5%;
+  }
+  .main-rest section a {
+    width: 48%;
+  }
+}
 @media screen and (min-width: 1000px) {
+  /* Home */
   .section-title {
     width: 100%;
   }
@@ -36,6 +46,7 @@
   .header-container .logo-header {
     height: 40px;
   }
+  /* Home */
   .banner-container {
     height: 400px;
   }
@@ -72,6 +83,35 @@
   }
   .restaurant-container a p {
     font-size: 20px;
+  }
+  /* Pages */
+  .main-rest div {
+    margin: 1% 5%;
+  }
+  .main-rest div h2 {
+    font-size: 34px;
+  }
+  .main-rest div span {
+    font-size: 34px;
+  }
+  .main-rest section h3 {
+    font-size: 22px;
+  }
+  .main-rest section a {
+    height: 100px;
+  }
+  .main-rest section a .price-item {
+    padding: 20px 25px 20px 0px;
+    font-size: 20px;
+  }
+  .main-rest section a .text-menu {
+    padding: 20px 15px;
+  }
+  .main-rest section a .text-menu strong {
+    font-size: 20px;
+  }
+  .main-rest section a .text-menu em {
+    font-size: 18px;
   }
 }
 

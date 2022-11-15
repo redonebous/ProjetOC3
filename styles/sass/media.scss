@@ -1,6 +1,22 @@
-/* Home */
+@media screen and (min-width: 750px) {
+    .main-rest {
+        section {
+            flex-flow: row wrap;
+            justify-content: space-between;
+            margin: 0% 5% 3% 5%;
+
+            a {
+                width: 48%;
+            }
+        }
+    }
+}
+
+
 
 @media screen and (min-width: 1000px) {
+    /* Home */
+
     .section-title {
         width: 100%;
     }
@@ -31,11 +47,9 @@
             margin: 20px 0px;
         }
     }
-
 }
 
 @media screen and (min-width: 1500px) {
-
     .header-container {
         height: 100px;
 
@@ -43,6 +57,8 @@
             height: 40px;
         }
     }
+
+    /* Home */
 
     .banner-container {
         height: 400px;
@@ -95,4 +111,51 @@
             }
         }
     }
+
+    /* Pages */
+
+    .main-rest {
+        
+        div {
+            margin: 1% 5%;
+
+            h2 {
+                font-size: 34px;
+            }
+
+            span {
+                font-size: 34px;
+            }
+        }
+
+        section {
+
+            h3 {
+                font-size: 22px;
+            }
+            
+            a {
+                height: 100px;
+
+                .price-item {
+                    padding: 20px 25px 20px 0px;
+                    font-size: 20px;
+                }
+
+                .text-menu {
+                    padding: 20px 15px;
+
+                    strong {
+                        font-size: 20px;
+                    }
+                    
+                    em {
+                        font-size: 18px;
+                    }
+                } 
+            }
+        }
+    }
+
+
 }
